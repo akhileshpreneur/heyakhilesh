@@ -1,0 +1,45 @@
+body{
+    background-color: #002;
+    color: #3ff;
+}
+.top-banner{
+    background: radial-gradient(circle at center, rgb(14, 124, 214), rgb(36, 22, 143));
+    border-radius:20px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.5);
+    padding: 5px 25px;
+}
+.main-heading{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+.heading-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align:justify;
+}
+/*The below CSS is for Menu*/
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    padding: 2px 25px;
+}
+.menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.menu li{
+    margin: 0 15px;
+}
+.menu a{
+    text-decoration: none;
+    color: #3ff;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    border-radius: 30px;
+    transition: background-color 0.3ms;
+}
+.menu a:hover {
+    background-color: rgba(0,0,30, 0.5)
+}
