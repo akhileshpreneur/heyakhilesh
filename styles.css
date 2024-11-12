@@ -19,9 +19,10 @@ body{
 /*The below CSS is for Menu*/
 .menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: auto;
-    padding: 2px 25px;
+    padding: 5px 25px;
+    flex-wrap:wrap;
 }
 .menu ul{
     list-style: none;
