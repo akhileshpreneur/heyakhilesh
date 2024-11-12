@@ -29,6 +29,7 @@ body{
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap:fl3x;
 }
 .menu li{
     margin: 0 15px;
