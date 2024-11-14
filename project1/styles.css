@@ -45,3 +45,6 @@ textarea {
     height: 100px;
     display:block;
 }
+legend {
+    text-align: center;
+}
