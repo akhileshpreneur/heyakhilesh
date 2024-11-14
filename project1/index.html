@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gamers Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Gamers Survery Form</h1>
+    <p id="description">This survey will help many indie game developers to establish a clear vision of what they should expect and create, You Opinion Matters!</p>
+    <hr>
+    <form id="survey-form" method="post" action="https://kitretsuuu.github.io/heyakhilesh/">
+        <fieldset>
+            <legend>Personal Information</legend>
+        <label for="name" id="name-label">Enter Your Gaming Alias (or real name):
+            <input type="text" id="name" required placeholder="eg. Kitretsuuu">
+        </label>
+        <br>
+        <label for="email" id="email-label">Enter your email address:
+            <input type="email" id="email" required placeholder="eg. youremail@domain.com">
+        </label>
+        <br>
+        <label for="number" id="number-label">Enter your age:
+            <input type="number" id="number" required min="12" max="120" placeholder="eg. 21">
+        </label>
+        <br>
+        <label for="dropdown" id="dropdown-label"> Your Generation:
+            <select id="dropdown">
+               <option value="0">-Select One-</option>
+               <option value="1">The Silent Generation</option>
+               <option value="2">Baby Boomers</option>
+               <option value="3">Generation X</option>
+               <option value="4">Millenials</option>
+               <option value="5">iGen</option>
+               <option value="6">Alpha</option>
+            </select>
+        </label>
+        </fieldset>
+        <br class="fieldset-separator">
+        <fieldset>
+            <legend>Your Gaming Experience</legend>
+        <label for="dropdown2" id="dropdown2-label"> Your Level:
+            <select id="dropdown2">
+               <option value="0">-Select One-</option>
+               <option value="1">Noobie</option>
+               <option value="2">Casual</option>
+               <option value="3">I'm A Nightmare</option>
+            </select>
+        </label>
+        <br>
+        <label class="title-label">What do you prefer most?</label>
+        <label for="great-story">
+            <input id="great-story" type="radio" name="genre" value="Great Story">Great Story
+        </label>
+        <label for="insane-graphics">
+            <input id="insane-graphics" type="radio" name="genre" value="Insane Graphics">Insane Graphics
+        </label>
+        <br>
+        <label class="title-label">Which Store Do You Use The Most?</label>
+        <label for="steam">
+            <input id="steam" type="radio" name="store" value="Great Story" checked>Steam
+        </label>
+        <label for="epic-games">
+            <input id="epic-games" type="radio" name="store" value="Epic Games">Epic Games
+        </label>
+        <label for="Others">
+            <input id="others" type="radio" name="store" value="Others">Others
+        </label>
+        <br>
+        <label>Select your favourite Genres:</label>
+    <div id="genre-options">
+        <label for="open-world">
+            <input type="checkbox" id="open-world" name="genre" value="open-world"/>Open World
+        </label>
+        <label for="racing">
+            <input type="checkbox" id="racing" name="genre" value="racing"> Racing
+        </label>
+        <label for="rpg">
+            <input type="checkbox" id="rpg" name="genre" value="rpg"> RPG
+        </label>
+        <label for="fps">
+            <input type="checkbox" id="fps" name="genre" value="fps"> FPS
+        </label>
+        <label for="visual-novel">
+            <input type="checkbox" id="visual-novel" name="genre" value="visual-novel"> Visual Novel
+        </label>
+        <label for="action">
+            <input type="checkbox" id="action" name="genre" value="action"> Action
+        </label>
+        <label for="adventure">
+            <input type="checkbox" id="adventure" name="genre" value="adventure"> Adventure
+        </label>
+        <label for="fantasy">
+            <input type="checkbox" id="fantasy" name="genre" value="fantasy"> Fantasy
+        </label>
+        <label for="simulator">
+            <input type="checkbox" id="simulator" name="genre" value="simulator"> Simulator
+        </label>
+        <label for="horror">
+            <input type="checkbox" id="horror" name="genre" value="horror"> Horror
+        </label>
+        <label for="puzzle">
+           <input type="checkbox" id="puzzle" name="genre" value="puzzle"> Puzzle
+        </label>
+        <label for="arcade">
+           <input type="checkbox" id="arcade" name="genre" value="arcade"> Arcade
+        </label>
+        <label for="strategy">
+           <input type="checkbox" id="strategy" name="genre" value="strategy"> Strategy
+        </label>
+        <label for="simulation">
+           <input type="checkbox" id="simulation" name="genre" value="simulation"> Simulation
+        </label>
+        <label for="sports">
+           <input type="checkbox" id="sports" name="genre" value="sports"> Sports
+        </label>
+        <label for="mmo">
+           <input type="checkbox" id="mmo" name="genre" value="mmo"> MMO
+        </label>
+        <label for="sandbox">
+            <input type="checkbox" id="sandbox" name="genre" value="sandbox"> Sandbox
+        </label>
+        <label for="card-game">
+            <input type="checkbox" id="card-game" name="genre" value="card-game"> Card Game
+        </label>
+        <label for="platformer">
+            <input type="checkbox" id="platformer" name="genre" value="platformer"> Platformer
+        </label>
+    </div>
+        <br>
+        <label>Enter Your Overall Feelings With Gaming:
+            <textarea placeholder="eg. It makes me feel relieved from daily stress..."></textarea>
+        </label>
+        </fieldset>
+        <br>
+        <label for="t-and-c">
+            <input id="t-and-c" type="checkbox" value="checkbox" required> Check if you have read and agreed to <a href="https://www.heyakhilech.com">Terms & Conditions</a>
+        </label>
+        <br>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+</body>
+</html>
