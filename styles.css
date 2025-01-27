@@ -1,3 +1,136 @@
-p {
-  font-size: 100000px;
+/* THIS IS THE START OF MAIN PROPERTIES*/
+html {
+    scroll-behavior: smooth;
 }
+:root {
+    --main-bg: #00022E;
+    --gradient: #7851A9;
+    --heading: #F8F8FF;
+    --main-text: #E6E6FA;
+    --accents: #F3C1C6;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--main-bg);
+    color: var(--main-text);
+}
+/* THIS IS THE START OF PAGE ELEMENTS*/
+.heading {
+    color: var(--heading);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+}
+hr {
+    background: linear-gradient(90deg, var(--main-bg), var(--gradient));
+}
+.about {
+    height: 100vh;
+    font-size: 1.9rem;
+    overflow: auto;
+    padding: 9% 10% 5% 10%
+}
+#projects {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0% 2% 0% 6%
+}
+.text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 10%;
+
+}
+.about {
+    background: linear-gradient(90deg, var(--main-bg), var(--gradient));
+    animation: appear 3s;
+}
+header {
+    background-color: var(--main-bg);
+    animation: appear 2s;
+    position: sticky;
+    z-index: 1;
+    height: 8vh;
+    top: 0;
+    font-size: large;
+}
+.header-heading {
+    font-size: xx-large;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 2px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Arrange list items in a row */
+    justify-content: space-around;
+}
+.projects-section {
+    background: linear-gradient(90deg, var(--main-bg), var(--gradient));
+    height: 100vh;
+    text-align: center;
+    font-size: large;
+}
+.projects-heading {
+    position:relative;
+    margin-bottom: 5%;
+    font-size: xxx-large;
+    text-align: center;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: var(--accents);
+    transition: all 0.3s ease;
+}
+.contact {
+    height: 80vh;
+    background: linear-gradient(90deg, var(--main-bg), var(--gradient));
+    height: 100vh;
+    font-size: 1.9rem;
+    overflow: auto;
+}
+.contact-text-control {
+    padding: 15% 5% 3% 5%;
+    text-align: left;
+}
+
+footer {
+    height: 20vh;
+    background-color: var(--main-bg);
+    border-top: var(--accents);
+    border-top-color: var(--accents);
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: -5%;
+}
+hr {
+    margin: 5px;
+    color: var(--gradient)
+}
+/* THIS IS THE START OF KEYFRAMES*/
+@keyframes appear{
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* THIS IS THE START OF ANIMATIONS*/
+.about-text {
+    animation: appear 3m;
+}
+/* THIS IS THE START OF Media Queries*/
+@media (max-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  }
