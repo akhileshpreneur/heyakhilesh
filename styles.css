@@ -38,6 +38,7 @@ hr {
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
     padding: 0% 2% 0% 6%
+Height: 100vh;
 }
 .text {
     font-family: Georgia, 'Times New Roman', Times, serif;
